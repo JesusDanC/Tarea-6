@@ -36,8 +36,6 @@ app.get('/', (req, res) => {
 });
 
 const history = require('connect-history-api-fallback');
-app.use(history());
-app.use(express.static(path.join('../client/dist/index.html', 'dist')));
 
 app.listen(process.env.PORT, () => {
     console.log('Express server puerto 3000: \x1b[32m%s\x1b[0m','online');

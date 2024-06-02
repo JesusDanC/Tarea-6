@@ -7,10 +7,7 @@ const Ver_cuentas = async(req, res) => {
     try {
         const cuentas = await modelo_cuenta.find({id_usuario}, 'numero_cuenta nombre saldo fecha_creacion fecha_suspendido');
 
-        res.status(200).json({
-            ok:true,
-            cuentas
-        });
+        res.json(cuentas);
 
     } catch (error) {
         console.log(error);

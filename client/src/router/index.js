@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Form from '../views/Form.vue'
 import Table from '../views/Table.vue'
 import Modal from '../views/Modal.vue'
+import Usuarios from '../views/Usuarios.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/Modal',
       name: 'Modal',
       component: Modal
+    },
+    {
+      path: '/Usuarios',
+      name: 'Usuarios',
+      component: Usuarios
     }
   ]
 })
